@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Props</title>
+</head>
+<body>
+    <div id="test"></div>
+</body>
+<!-- 引入react核心库 -->
+<script type="text/javascript" src="../js/react.development.js"></script>
+<!-- 引入react核-dom，用于支持react操作DOM -->
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/prop-types.js"></script>
+
+<!-- 引入babel，用于将JSX转为js -->
+<script type="text/javascript" src="../js/babel.min.js"></script>
+
+<script type="text/babel">
+    class Demo extends React.Component {
+        showData = ()=>{
+            //解构赋值
+            const {input} =this
+            alert(input.value)
+        }
+        //render中ref采用回调函数赋值的形式,将ref所在的节点赋值给 this.input 属性，因为
+        //箭头函数没有this，向外寻找this找到了render()， 所以input属性给了Demo的实例对象，可以直接取值
+        render() {
+            return (
+                <div>
+                    <input onBlur={this.showData} ref={currentNode=> this.input = currentNode} type="text" placeholder='失去焦点提示内容'/>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<Demo />, document.getElementById('test'))
+</script>
+</html>
