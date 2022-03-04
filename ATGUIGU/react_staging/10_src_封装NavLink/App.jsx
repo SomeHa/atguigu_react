@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import { Route } from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import Home from './pages/Home' //Home是路由组件
 import About from './pages/About'
 import Header from './components/Header' //Header是普通组件
 import MyNavLink from './components/MyNavLink'
-import Test from './pages/Test'
 
 export default class App extends Component {
 	render() {
@@ -13,7 +12,7 @@ export default class App extends Component {
 				<div className="row">
 					<div className="col-xs-offset-2 col-xs-8">
 						<div className="page-header">
-							<Header />
+							<Header/>
 						</div>
 					</div>
 				</div>
@@ -33,15 +32,9 @@ export default class App extends Component {
 					<div className="col-xs-6">
 						<div className="panel">
 							<div className="panel-body">
-								{/* switch包裹後，同一个路由只会显示第一个组件 */}
-								<switch>
-									{/* 注册路由 */}
-									<Route path="/about" component={About} />
-									<Route path="/home" component={Home} />
-									<Route path="/home" component={Test} />
-								</switch>
-
-
+								{/* 注册路由 */}
+								<Route path="/about" component={About}/>
+								<Route path="/home" component={Home}/>
 							</div>
 						</div>
 					</div>
