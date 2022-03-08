@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS动画</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            position: absolute; /*必须加定位才能使用element.style.left*/
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        //动画原理
+        //1. 获得盒子当前位置   element.offsetLeft 
+        //2、让盒子在当前位置上加1个移动距离  element.style.left = element.offsetLeft + 1 + 'px'
+        //3、利用定时器不断重复这个动作
+        //4、加一个结束定时器的条件
+        //5、注意此元素需要添加定位，才能使用 element.style.left!!!!
+        var div = document.getElementById('root')
+        div.style.left =  div.offsetLeft  +10 +'px';
+        var timer = setInterval(()=>{
+            if( div.offsetLeft >= 500){
+                clearInterval(timer)
+            }
+            div.style.left =  div.offsetLeft  +5 +'px'
+        },30)
+        timer();
+    </script>
+</body>
+</html>
