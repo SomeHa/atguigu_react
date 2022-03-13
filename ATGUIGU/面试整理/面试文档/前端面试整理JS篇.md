@@ -1,8 +1,40 @@
 
 
+![image-20220311225326900](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220311225326900.png)
 
+![image-20220311231920139](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220311231920139.png)
 
-##### 1，JavaScript的typeof返回哪些数据类型？
+![image-20220311232545038](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220311232545038.png)
+
+##### ![](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220311233449512.png)
+
+![image-20220312100202927](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220312100202927.png)
+
+![image-20220313132106353](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313132106353.png)
+
+![image-20220313133418018](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313133418018.png)
+
+![image-20220313133431287](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313133431287.png)
+
+##### ![](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313134950158.png)
+
+![image-20220313141457625](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313141457625.png)
+
+手写ajax
+
+![image-20220313142050398](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313142050398.png)
+
+![image-20220313160210339](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313160210339.png)
+
+![image-20220313195004575](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313195004575.png)
+
+##### ![image-20220313195028019](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313195028019.png)
+
+![image-20220313195215968](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313195215968.png)
+
+![image-20220313202304152](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313202304152.png)
+
+##### ![image-20220313223410582](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20220313223410582.png)1，JavaScript的typeof返回哪些数据类型？
 
 ​        答案：string、Boolean，number，underfined，null，object，function
 
